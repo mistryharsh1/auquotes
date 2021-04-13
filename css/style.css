@@ -110,9 +110,15 @@ h3{
     color: #fff;
     text-decoration: none;
  }
-
+ .hero_form{
+    max-width: 360px;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
 /*form css */
-.hero_form{
+/* .hero_form{
     max-width: 360px;
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
@@ -301,7 +307,7 @@ form .page .btns button.next {
 .progress-bar .step .check.active {
     display: block;
     color: #fff;
-}
+} */
 /*form css end*/
 .services
 {
@@ -420,6 +426,7 @@ form .page .btns button.next {
     max-width: 300px;
     margin: 30px;
     justify-content: center;
+    align-items: baseline;
     display: flex;
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
