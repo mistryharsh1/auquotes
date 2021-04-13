@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Numans&family=Poppins:wght@200;300;500;600;900&family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+/*Global*/
+.global{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    background: #28215D;
+    background: -webkit-linear-gradient(to bottom right, #28215D 50%, #5C42BB 70%, #4FC0FC 80%);
+    background: -moz-linear-gradient(to bottom right, #28215D 50%, #5C42BB 70%, #4FC0FC 80%);
+    background: linear-gradient(to bottom right, #28215D 50%, #5C42BB 70%, #4FC0FC 80%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*header css*/
+.header
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.header .nav li a, 
+.header .nav li,
+.header .nav
+{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    color: #535353;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.header .logo h1
+{
+    font-family: 'Numans', sans-serif;
+}
+
+/*landing page css*/
+.landing_page
+{
+    display: flex;
+    justify-content: space-around;
+    min-height: 700px;
+    flex-wrap: wrap;
+    font-family: 'poppins', sans-serif;
+    align-items: center;
+    
+}
+.hero_content
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    justify-content: center;
+    max-width: 500px;
+    
+}
+
+.hero_content h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background: #121FCF;
+    background: -webkit-linear-gradient(left, #121FCF 30%, #477EFF 60%, #55C7CF 100%);
+    background: -o-linear-gradient(left, #121FCF 30%, #004cff 60%, #55C7CF 100%);
+    background: linear-gradient(to right, #000b9b 30%, #477EFF 60%, #55C7CF 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.hero_content a{
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
+}
+
+.hero_content a{
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 20px;
+    display: block;
+    text-decoration: none;
+    width: 100px;
+}
+.hero_content a:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+ }
+
+/*form css */
+.hero_form{
+    max-width: 360px;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.container header {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container .form-outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container .form-outer form {
+    display: flex;
+    width: 400%;
+}
+
+.form-outer form .page {
+    width: 25%;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.form-outer form .page .title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-outer form .page .field {
+    width: 330px;
+    height: 40px;
+    margin: 40px 0;
+    display: flex;
+    position: relative;
+}
+
+form .page .field .label {
+    position: absolute;
+    top: -30px;
+    font-weight: 400;
+}
+
+form .page .field input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+form .page .field select {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form .page .field button {
+    width: 100%;
+    height: calc(100% + 5px);
+    border: none;
+    background: #2bfc43;
+    margin-top: -20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+
+form .page .field button:hover {
+    background: #000;
+}
+
+form .page .btns button {
+    margin-top: -20px !important;
+}
+
+form .page .btns button.prev {
+    margin-right: 3px;
+    font-size: 16px;
+}
+
+form .page .btns button.next {
+    margin-left: 3px;
+}
+
+.container .progress-bar {
+    display: flex;
+    margin: 40px 0;
+    user-select: none;
+}
+
+.container .progress-bar .step {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.container .progress-bar .step p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.progress-bar .step .bullet {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.progress-bar .step .bullet.active {
+    border-color: #2bfc43;
+    background: #fff;
+}
+
+.progress-bar .step .bullet span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-bar .step .bullet.active span {
+    display: none;
+}
+
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after {
+    position: absolute;
+    content: '';
+    bottom: 11px;
+    right: -51px;
+    height: 3px;
+    width: 44px;
+    background: #262626;
+}
+
+.progress-bar .step .bullet.active:after {
+    background: #2bfc43;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after {
+    display: none;
+}
+
+.progress-bar .step p.active {
+    color: #2bfc43;
+    transition: 0.2s linear;
+}
+
+.progress-bar .step .check {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.progress-bar .step .check.active {
+    display: block;
+    color: #fff;
+}
+/*form css end*/
+.services
+{
+    min-height: 600px;
+}
+
+/*services cards*/
+.service
+{
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    min-height: 600px;
+   
+}
+.service::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 90%);
+}
+.service::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 10%);
+    z-index: -1;
+}
+.service .card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 40px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transform-style: preserve-3d;
+}
+
+.service .card .content_service
+{
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.service .card .content_service h2
+{
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    font-size: 8em;
+    color: rgba(173, 179, 255, 0.4);
+    pointer-events: none;
+    z-index: -999;
+}
+
+.service .card .content_service h3
+{
+    font-size: 1.8em;
+    color: #42478e;
+}
+
+.service .card .content_service p
+{
+    font-size: 1em;
+    color: gray;
+}
+
+.service .card .content_service a
+{
+    font-family: 'poppins', sans-serif;
+    position: relative;
+    top: 20px;
+    background: white;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 2px 4px rgba(230, 230, 230, 0.5);
+
+}
+/*services cards end*/
+.how
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 300px;
+}
+.how .how_cards
+{
+    max-width: 300px;
+    margin: 30px;
+    justify-content: center;
+    display: flex;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/*footer*/
+.footer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.sec_one li a, .sec_two li a, .sec_three li a
+{
+    text-decoration: none;
+    color: gray;
+    
+}
+h4
+{
+    margin-bottom: 20px;
+    color: #404040;
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 500;
+    
+}
+
+li
+{
+    margin: 10px;
+    list-style: none;
+}
+li:hover
+{
+    text-decoration: underline;
+}
+
+span
+{
+    font-weight: 200;
+    font-size: 14px;
+    font-family: 'poppins';
+}
+h5{
+    text-align: center;
+    font-weight: 300;
+    font-family: 'poppins';
+    
+}
+p
+{
+    text-align: left;
+    color: gray;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 400;
+}

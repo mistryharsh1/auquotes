@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Solar FAQs</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Numans&family=Poppins:wght@200;300;500;600;900&family=Source+Sans+Pro:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+        .Accordion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            color: #000;
+            letter-spacing: 2px;
+            word-spacing: 1px;
+            font-family: sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .header .nav li a,
+        .header .nav li,
+        .header .nav {
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            color: #000;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .header .logo h1 {
+            font-family: 'Numans', sans-serif;
+        }
+
+        .Accordion {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .Accordion__tabs {
+            max-width: 600px;
+            list-style: none;
+        }
+
+        .Accordion__tab {
+            width: 100%;
+        }
+
+        .Accordion__tab__headline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(248, 248, 248, 0.5);
+            transition: 0.2s ease all;
+            padding: 20px 15px;
+            cursor: pointer;
+            font-weight: 400;
+        }
+
+        .Accordion__tab__headline:hover {
+            background-color: #eeff92;
+        }
+
+        .Accordion__tab__headline>h4 {
+            user-select: none;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .Accordion__tab__headline .icon {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            border: 1px solid;
+            border-radius: 22px;
+            position: relative;
+        }
+
+        .Accordion__tab__headline .icon::before {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: 6px;
+            width: 10px;
+            height: 2px;
+            background: currentColor;
+        }
+
+        .Accordion__tab__headline .icon::after {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 6px;
+            left: 10px;
+            width: 2px;
+            height: 10px;
+            background: currentColor;
+            transition: 0.2s ease all;
+        }
+
+        .Accordion__tab__content {
+            overflow: hidden;
+            padding: 0px 15px;
+            box-sizing: border-box;
+            height: 100%;
+            max-height: 0;
+            transition: 0.4s ease all;
+        }
+
+        .Accordion__tab--open .Accordion__tab__headline .icon::after {
+            transform: scaleY(0);
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+            padding: 40px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .sec_one li a,
+        .sec_two li a,
+        .sec_three li a {
+            text-decoration: none;
+            color: gray;
+
+        }
+
+        h4 {
+            margin-bottom: 20px;
+            color: #404040;
+            font-size: 18px;
+            font-family: 'poppins';
+            font-weight: 500;
+
+        }
+
+        li {
+            margin: 10px;
+            list-style: none;
+        }
+
+
+        span {
+            font-weight: 200;
+            font-size: 14px;
+            font-family: 'poppins';
+        }
+
+        h5 {
+            text-align: center;
+            font-weight: 300;
+            font-family: 'poppins';
+
+        }
+
+        p {
+            text-align: left;
+            color: gray;
+        }
+
+        a {
+            color: gray;
+            text-decoration: none;
+            font-family: 'poppins';
+            font-size: 14px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  header  -->
+    <div class="header">
+        <div class="logo">
+            <h1>Au Quotes</h1>
+        </div>
+        <div class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </div>
+    </div>
+    <!--  /header  -->
+    <section class="Accordion">
+        <ul class="Accordion__tabs">
+            <li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>What types of rebates are available?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Both the State and Federal Government provide 2 forms of assistance when installing a solar system.</p>
+                            <p>A rebate when you purchase the system, which comes off the price of the system.</p>
+                            <p>The purchase of the power you don’t use during the day.</p>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Can you please put the brand names and models on the quote?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Make sure any quote states the brand names, makes and models of the system components. Unbranded, or cheap brands may not last very long. Companies without these elements are not signatories of the Clean Energy Council Approved Retailer Program and should be avoided.
+                        </p>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>How have you made the savings calculations?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Unrealistic performance claims are everywhere. There are many variables involved in calculating how well a solar installation will perform, ranging from the weather and ambient temperature, to the quality of the components in the system. Ask the installer how much they would expect your new system to save you and check their inputs used for your savings calculation.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>What if my roof doesn’t face North?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Solar Power systems can be installed on roofs facing anywhere from due east to due west. North is best for absolute production, however a well designed system will match your solar production to your home’s electricity consumption.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Can you show me your accreditation?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Make sure your installer is fully qualified and experienced: a solar system is extremely complicated, and the design and installation of the system will dramatically affect its efficiency. A fully qualified and experienced installer will be able to recommend the best system for your property and will ensure you maximise the power output from your system.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                         
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Is solar power as effective in winter?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Solar panel cells rely on sunlight and not heat so yes, they still work well in winter although as the sun is following a different path the usable sun hours are less. Less power in winter and more in summer. Good companies will explain this and give you month by month estimates of power production.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                       
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Is there a battery?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Generally if your house has power from the street (Grid Power Connected), you will not need a battery, and most solar systems will not include a battery system. Therefore off grid homes will almost always have battery systems and even petrol or diesel generators as a backup for when the solar system is not operating (i.e. night time or overcast weather). However, a battery system is still an option for all homes and businesses, and a knowledgeable retailer will be able to show you how a battery system can be incorporated and just what it can do for you in terms of energy security or independence, and blackout protection.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                       
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>What happens if there is a blackout?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Well-designed quality battery systems can be configured to run during a blackout often providing power to a limited set of crucial items in the home, like lights and your fridges.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                       
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Do solar systems work if the panels are in shade?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Optimised systems or systems using microinverters can work when part of the array is shaded. However in most cases a traditional inexpensive solar system will require all panels to be in the sun to work effectively, so shading is a big issue, and if your roof has times during the day where it is heavily shaded you will need the experience of a reputable solar system designer to provide you some options.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                       
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Can I track solar production that is not used and goes back into the grid?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Not all electricity meters can measure the solar production that is not used by your house that goes back into the grid. It is a requirement that you have to contact your retailer and get your meter changed. Energex used to do this, and your solar installer organised this change for you. A good solar retailer will assist you with this confusing issue and help you get every setup correctly, they will not simply leave you to work it out and possibly miss out on $100's of feed in tariff discounts off your electricity bills.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                       
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>How do I reduce my power consumption?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Ask the company if there are simple ways you can reduce your electricity consumption - this is straightforward and can save you a lot of money. If your electricity usage is reduced, you will not need to install as big a solar power system. Ask if they have any unique metering systems. Some companies have mobile apps that allow you to track your consumption wherever you are.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                       
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Do you offer all types of warranty?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Ensure a warranty applies to all components in the system, workmanship of the installation and overall performance – be sure to check that these warranties all align, as some companies are known to offer 30-year performance warranty but the product warranty is only 10 years.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                       
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Can you explain why the inverter you will install is high quality?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>The inverter is as important as the solar panels themselves and lower quality inverters have a shorter lifespan and are not as efficient as better quality models
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                       
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Shade tolerance?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Shade tolerance claims: some makes of panels claim an amount of ‘shade tolerance’ that is an ability to generate electricity even when they are shaded (by a tree for example) from the sun. In practice all solar panel arrays will suffer a significantly reduced power output when even a portion of the array is in the shade.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                                
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Is solar power as effective in winter?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Solar panel cells rely on sunlight not heat but extended hours of sunlight in summer obviously produce more electricity.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                                
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Do solar systems work when cloudy?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Yes, but they produce less electricity.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                                
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Do solar systems work if the panels are in shade?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Due to the way a solar panel array is wired all panels must be exposed to sunlight for the array to work efficiently.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                                
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>What is STC? </h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>When you install a solar system, you generate what are called Small Technology Certificates (STC’s) or what were formally called Renewable Energy Certificates (RECs). You will receive 1 STC for every Megawatt of energy your system is expected to produce over the next 15 years.</p>
+                        <p>A 1.5 kW system (approx 8 panels) will produce around 31mW worth of electricity over a 15-year period so you are entitled to 31 STC’s, which currently trade for around $30 each. This means you receive $900 in assistance when you purchase a 1.5kW system.</p>
+                        <p>The Federal Government has also introduced the STC multiplier, which entitles you to 3 times this amount of STC’s for your first 1.5kW worth of system up until July 1st 2012. After this date, the multiplier will reduce by 1 multiple each year until 2013 when it’s withdrawn.</p>
+                        <p>This means that the government commits around $2700 for your first 1.5kW worth of system and then $600 for every kW after that.
+                        If you need more information than what’s provided in our solar FAQs, give us a call on 1300 074 669.</p>
+                        
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                                
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>How do I sell excess power and is it paid by the electricity retailer?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Your energy provider will buy back whatever energy you don’t use.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                                
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>Do I need planning approval?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p><strong>Generally not.</strong>
+However, if your property is heritage listed you will need to attain planning approval. If you live in a complex governed by a strata agreement, you will need approval from the body corporate.
+
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                                
+            <!--copy start--><li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>What if I have a flat or low pitched roof?</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>Systems can either be installed on a flat roof or tilting frames can be installed by a qualified builder at an extra expense. We recommend a slight pitch to allow for water runoff and self cleaning.
+                        </p>
+                    </div>
+                </div> 
+            </li><!--copy end-->
+                                                
+            <!--copy start-->
+<!--
+               <li class="Accordion__tab" onclick="toggleAccordion(this)">
+                <div class="Accordion__tab__headline">
+                    <h4>question</h4><span class="icon"></span>
+                </div>
+                <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                        <p>answer
+                        </p>
+                    </div>
+                </div> 
+            </li>
+-->
+            <!--copy end-->
+                                                
+            
+              
+               
+        </ul>
+    </section>
+    <hr style="color: gray">
+    <div class="main_footer">
+        <div class="sub_footer">
+            <!--   Find Inspiration    -->
+        </div>
+        <div class="footer">
+            <div class="sec_one">
+                <h4>Au Quotes</h4>
+                <li><a href="#"> Blog </a></li>
+                <li><a href="#"> About Us </a></li>
+                <li><a href="#"> Solar Faqs </a></li>
+                <li><a href="#"> Privacy Policy </a></li>
+                <li><a href="pages/terms_condition.html" target="_blank"> Terms & Conditions </a></li>
+            </div>
+            <div class="sec_two">
+                <h4>Useful Links</h4>
+                <li><a href="#"> Free Solar Quotes </a></li>
+                <li><a href="#"> How It Works </a></li>
+                <li><a href="#"> Electrician </a></li>
+                <li><a href="#"> Cleaning </a></li>
+            </div>
+            <div class="sec_three">
+                <h4>Follow Us</h4>
+                <li><a href="#"> Facebook </a></li>
+                <li><a href="#"> Instagram </a></li>
+                <li><a href="#"> Twitter </a></li>
+            </div>
+            <div class="sec_four">
+                <h4>Contact Us</h4>
+                <div class="contact_info">
+                    <p><a href="mailto:">info@auquotes.com.au</a></p>
+                    <p><span>(open 24 hours a day, 7 days a week)</span> </p>
+                </div>
+            </div>
+        </div>
+        <h5> © Au Quotes 2021. All Rights Reserved.</h5>
+    </div>
+    <script defer type="application/javascript">
+        var elementOld = null;
+        var openClass = "Accordion__tab--open";
+
+        function toggleAccordion(element) {
+            content = element.querySelector(".Accordion__tab__content");
+
+            if (elementOld != null) {
+                elementOld.classList.remove(openClass);
+                contentOld = elementOld.querySelector(".Accordion__tab__content");
+                contentOld.style.maxHeight = "0px";
+            }
+
+            if (elementOld !== element) {
+                element.classList.add(openClass);
+                content.style.maxHeight = content.scrollHeight + "px";
+                elementOld = element;
+            } else {
+                elementOld = null;
+            }
+        }
+    </script>
+</body>
+
+</html>
