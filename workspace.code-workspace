@@ -8,5 +8,7 @@
 			"path": "..\\..\\repo\\auquotes"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "auquotes"
+	}
 }
