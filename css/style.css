@@ -435,6 +435,10 @@ form .page .btns button.next {
 }
 
 /*footer*/
+
+.main_footer{
+    margin-top: 5rem;
+}
 .footer
 {
     display: flex;
