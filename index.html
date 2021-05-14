@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <title>Au Quotes | Home</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 <!--  header  -->
     <div class="header">
         <div class="logo">
             <h1>Au Quotes</h1>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Explore &nbsp; ▼</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#contact">Contact</a>
+                </div>
+              </div>
         </div>
-        <div class="nav">
+        <!-- <div class="nav">
             
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Contact us</a></li>
-        </div>
+        </div> -->
     </div>
 <!--  /header  -->
 <!--landing page-->
@@ -30,7 +39,7 @@
                  qualified, accredited, experienced, have a healthy track record of
                   business & market and have positive reviews.Join us today and TOGETHER WE GROW. 
             </p>
-            <a class="btn card" href="#">Get Quotes</a>
+            <a class="btn" href="#">Get Quotes</a>
         </div>
         <div class="hero_form">
         <!--Get Solar Quote Form-->
@@ -267,6 +276,28 @@
 <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 <script src="js/form.js"></script>
 <script src="js/tilt.js"></script>
+<script defer>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
 <script type="text/javascript">
 	VanillaTilt.init(document.querySelectorAll(".card"), {
 		max: 25,
@@ -274,5 +305,6 @@
         glare: true
 	});
 </script>
+
 </body>
 </html>

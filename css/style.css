@@ -15,6 +15,68 @@
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
+
+/* .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px ;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+   */
+ 
+  .dropbtn {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
+  .dropbtn {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+     border: none;
+   }
+
+   .dropbtn:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 2rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
 p{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -47,6 +109,16 @@ h3{
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 1px;
     word-spacing: 2px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin-left: 180px;
+}
+.logo{
+    display: flex;
+    align-items: center;
 }
 .header .logo h1
 {
@@ -87,29 +159,7 @@ h3{
      -webkit-text-fill-color: transparent;
 }
 
-.hero_content a{
-    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
-}
 
-.hero_content a{
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 20px;
-    display: block;
-    text-decoration: none;
-    width: 100px;
-}
-.hero_content a:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
- }
  .hero_form{
     max-width: 360px;
     box-shadow:  20px 20px 60px #bebebe,
